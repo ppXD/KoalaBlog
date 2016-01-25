@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{397A253A-2F93-4F59-B4E0-9F72F1427C8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KoalaBlog.Entity</RootNamespace>
+    <AssemblyName>KoalaBlog.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="EntityTypeConfigurationBase.cs" />
+    <Compile Include="Models\BlogAccessControl.cs" />
+    <Compile Include="Models\BlogAccessControlXGroup.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Avatar.cs" />
+    <Compile Include="Models\Blog.cs" />
+    <Compile Include="Models\BlogXBlog.cs" />
+    <Compile Include="Models\BlogXContent.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\CommentXComment.cs" />
+    <Compile Include="Models\CommentXContent.cs" />
+    <Compile Include="Models\Content.cs" />
+    <Compile Include="Models\Education.cs" />
+    <Compile Include="Models\EmailConfirmation.cs" />
+    <Compile Include="Models\EntityComplain.cs" />
+    <Compile Include="Models\EntityLike.cs" />
+    <Compile Include="Models\EntityConcurrentLock.cs" />
+    <Compile Include="Models\Enums\BlogAccessInfo.cs" />
+    <Compile Include="Models\Enums\ContentType.cs" />
+    <Compile Include="Models\Enums\GroupType.cs" />
+    <Compile Include="Models\Enums\Person.cs" />
+    <Compile Include="Models\Enums\EmailConfirmationType.cs" />
+    <Compile Include="Models\Enums\LogLevel.cs" />
+    <Compile Include="Models\Enums\TokenType.cs" />
+    <Compile Include="Models\Favorite.cs" />
+    <Compile Include="Models\Group.cs" />
+    <Compile Include="Models\GroupMember.cs" />
+    <Compile Include="Models\Job.cs" />
+    <Compile Include="Models\Log.cs" />
+    <Compile Include="Models\Mapping\BlogAccessControlMap.cs" />
+    <Compile Include="Models\Mapping\BlogAccessControlXGroupMap.cs" />
+    <Compile Include="Models\Mapping\AddressMap.cs" />
+    <Compile Include="Models\Mapping\AvatarMap.cs" />
+    <Compile Include="Models\Mapping\BlogMap.cs" />
+    <Compile Include="Models\Mapping\BlogXBlogMap.cs" />
+    <Compile Include="Models\Mapping\BlogXContentMap.cs" />
+    <Compile Include="Models\Mapping\CommentMap.cs" />
+    <Compile Include="Models\Mapping\CommentXCommentMap.cs" />
+    <Compile Include="Models\Mapping\CommentXContentMap.cs" />
+    <Compile Include="Models\Mapping\ContentMap.cs" />
+    <Compile Include="Models\Mapping\EducationMap.cs" />
+    <Compile Include="Models\Mapping\EmailConfirmationMap.cs" />
+    <Compile Include="Models\Mapping\EntityComplainMap.cs" />
+    <Compile Include="Models\Mapping\EntityLikeLockMap.cs" />
+    <Compile Include="Models\Mapping\EntityLikeMap.cs" />
+    <Compile Include="Models\Mapping\FavoriteMap.cs" />
+    <Compile Include="Models\Mapping\GroupMap.cs" />
+    <Compile Include="Models\Mapping\GroupMemberMap.cs" />
+    <Compile Include="Models\Mapping\JobMap.cs" />
+    <Compile Include="Models\Mapping\LogMap.cs" />
+    <Compile Include="Models\Mapping\PermissionMap.cs" />
+    <Compile Include="Models\Mapping\PersonMap.cs" />
+    <Compile Include="Models\Mapping\PersonXPersonMap.cs" />
+    <Compile Include="Models\Mapping\RoleMap.cs" />
+    <Compile Include="Models\Mapping\RoleXPermissionMap.cs" />
+    <Compile Include="Models\Mapping\RoleXUserAccountMap.cs" />
+    <Compile Include="Models\Mapping\SchoolCategoryMap.cs" />
+    <Compile Include="Models\Mapping\SchoolMap.cs" />
+    <Compile Include="Models\Mapping\TagMap.cs" />
+    <Compile Include="Models\Mapping\TokenMap.cs" />
+    <Compile Include="Models\Mapping\UserAccountMap.cs" />
+    <Compile Include="Models\Mapping\UserAccountXPermissionMap.cs" />
+    <Compile Include="Models\Mapping\UserAccountXPersonMap.cs" />
+    <Compile Include="Models\Permission.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\PersonXPerson.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\RoleXPermission.cs" />
+    <Compile Include="Models\RoleXUserAccount.cs" />
+    <Compile Include="Models\School.cs" />
+    <Compile Include="Models\SchoolCategory.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\UserAccount.cs" />
+    <Compile Include="Models\UserAccountXPermission.cs" />
+    <Compile Include="Models\UserAccountXPerson.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

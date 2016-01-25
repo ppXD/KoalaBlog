@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87B9AE10-7EC7-41B5-B71E-C412221A5379}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KoalaBlog.BLL</RootNamespace>
+    <AssemblyName>KoalaBlog.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityHandlerBase.cs" />
+    <Compile Include="Handlers\BlogAccessControlHandler.cs" />
+    <Compile Include="Handlers\BlogAccessControlHandler.base.cs" />
+    <Compile Include="Handlers\BlogAccessControlXGroupHandler.cs" />
+    <Compile Include="Handlers\BlogAccessControlXGroupHandler.base.cs" />
+    <Compile Include="Handlers\AddressHandler.cs" />
+    <Compile Include="Handlers\AddressHandler.base.cs" />
+    <Compile Include="Handlers\AvatarHandler.cs" />
+    <Compile Include="Handlers\AvatarHandler.base.cs" />
+    <Compile Include="Handlers\BlogHandler.cs" />
+    <Compile Include="Handlers\BlogHandler.base.cs" />
+    <Compile Include="Handlers\BlogXBlogHandler.base.cs" />
+    <Compile Include="Handlers\BlogXBlogHandler.cs" />
+    <Compile Include="Handlers\BlogXContentHandler.cs" />
+    <Compile Include="Handlers\BlogXContentHandler.base.cs" />
+    <Compile Include="Handlers\CommentHandler.cs" />
+    <Compile Include="Handlers\CommentHandler.base.cs" />
+    <Compile Include="Handlers\CommentXCommentHandler.cs" />
+    <Compile Include="Handlers\CommentXCommentHandler.base.cs" />
+    <Compile Include="Handlers\CommentXContentHandler.cs" />
+    <Compile Include="Handlers\CommentXContentHandler.base.cs" />
+    <Compile Include="Handlers\ContentHandler.cs" />
+    <Compile Include="Handlers\ContentHandler.base.cs" />
+    <Compile Include="Handlers\EducationHandler.base.cs" />
+    <Compile Include="Handlers\EducationHandler.cs" />
+    <Compile Include="Handlers\EmailConfirmationHandler.base.cs" />
+    <Compile Include="Handlers\EmailConfirmationHandler.cs" />
+    <Compile Include="Handlers\EntityComplainHandler.cs" />
+    <Compile Include="Handlers\EntityComplainHandler.base.cs" />
+    <Compile Include="Handlers\EntityLikeHandler.cs" />
+    <Compile Include="Handlers\EntityLikeHandler.base.cs" />
+    <Compile Include="Handlers\EntityConcurrentLockHandler.base.cs" />
+    <Compile Include="Handlers\EntityConcurrentLockHandler.cs" />
+    <Compile Include="Handlers\FavoriteHandler.cs" />
+    <Compile Include="Handlers\FavoriteHandler.base.cs" />
+    <Compile Include="Handlers\GroupHandler.cs" />
+    <Compile Include="Handlers\GroupHandler.base.cs" />
+    <Compile Include="Handlers\GroupMemberHandler.cs" />
+    <Compile Include="Handlers\GroupMemberHandler.base.cs" />
+    <Compile Include="Handlers\JobHandler.cs" />
+    <Compile Include="Handlers\JobHandler.base.cs" />
+    <Compile Include="Handlers\LogHandler.base.cs" />
+    <Compile Include="Handlers\LogHandler.cs" />
+    <Compile Include="Handlers\PermissionHandler.cs" />
+    <Compile Include="Handlers\PermissionHandler.base.cs" />
+    <Compile Include="Handlers\PersonHandler.cs" />
+    <Compile Include="Handlers\PersonHandler.base.cs" />
+    <Compile Include="Handlers\PersonXPersonHandler.cs" />
+    <Compile Include="Handlers\PersonXPersonHandler.base.cs" />
+    <Compile Include="Handlers\RoleHandler.cs" />
+    <Compile Include="Handlers\RoleHandler.base.cs" />
+    <Compile Include="Handlers\RoleXPermissionHandler.cs" />
+    <Compile Include="Handlers\RoleXPermissionHandler.base.cs" />
+    <Compile Include="Handlers\RoleXUserAccountHandler.cs" />
+    <Compile Include="Handlers\RoleXUserAccountHandler.base.cs" />
+    <Compile Include="Handlers\SchoolCategoryHandler.cs" />
+    <Compile Include="Handlers\SchoolCategoryHandler.base.cs" />
+    <Compile Include="Handlers\SchoolHandler.cs" />
+    <Compile Include="Handlers\SchoolHandler.base.cs" />
+    <Compile Include="Handlers\TagHandler.cs" />
+    <Compile Include="Handlers\TagHandler.base.cs" />
+    <Compile Include="Handlers\TokenHandler.cs" />
+    <Compile Include="Handlers\TokenHandler.base.cs" />
+    <Compile Include="Handlers\UserAccountHandler.cs" />
+    <Compile Include="Handlers\UserAccountHandler.base.cs" />
+    <Compile Include="Handlers\UserAccountXPermissionHandler.cs" />
+    <Compile Include="Handlers\UserAccountXPermissionHandler.base.cs" />
+    <Compile Include="Handlers\UserAccountXPersonHandler.cs" />
+    <Compile Include="Handlers\UserAccountXPersonHandler.base.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\KoalaBlog.DAL\KoalaBlog.DAL.csproj">
+      <Project>{37156eb8-2914-44bd-b3ab-a8d137aee864}</Project>
+      <Name>KoalaBlog.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KoalaBlog.Entity\KoalaBlog.Entity.csproj">
+      <Project>{397a253a-2f93-4f59-b4e0-9f72f1427c8d}</Project>
+      <Name>KoalaBlog.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KoalaBlog.Framework\KoalaBlog.Framework.csproj">
+      <Project>{334483f8-cf0d-4f9e-96e0-20f2ea2af5c9}</Project>
+      <Name>KoalaBlog.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KoalaBlog.Principal\KoalaBlog.Principal.csproj">
+      <Project>{52684c26-c018-4e8a-8f9d-1a5fc0a80a43}</Project>
+      <Name>KoalaBlog.Principal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KoalaBlog.Security\KoalaBlog.Security.csproj">
+      <Project>{3a1cd6bb-df1d-4a80-a645-b2557084f18e}</Project>
+      <Name>KoalaBlog.Security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
