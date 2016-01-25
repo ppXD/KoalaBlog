@@ -1,0 +1,34 @@
+﻿@model KoalaBlog.Web.Models.ConfirmEmailViewModel
+@{
+    ViewBag.Title = "ConfirmEmail";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+@if (Model.IsEmailConfirmed)
+{
+    <div>
+        <p>
+            你已成功注册邮件，点击登录 @Html.ActionLink("Click here to Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+        </p>
+    </div>
+}
+else
+{
+    <div>
+        <p>
+            Please confirm your account.
+        </p>
+        <p>
+            @using (Html.BeginForm("ResendRegisterEmailConfirmation", "Account", FormMethod.Post))
+            { 
+                @Html.AntiForgeryToken()
+                
+                @Html.HiddenFor(x => x.UserID)
+                @Html.HiddenFor(x => x.Email)
+                @Html.HiddenFor(x => x.IsEmailConfirmed)
+                
+                <input type="submit" value="重发邮件" />
+            }
+        </p>
+    </div>
+}

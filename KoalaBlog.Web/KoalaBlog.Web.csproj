@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDCD3B1E-D616-49CE-9F92-3DAE25409DC2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KoalaBlog.Web</RootNamespace>
+    <AssemblyName>KoalaBlog.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Images\body_bg.png" />
+    <Content Include="Content\Images\brand-white.png" />
+    <Content Include="Content\Images\brand-default.png" />
+    <Content Include="Content\Images\avatar-default.jpg" />
+    <Content Include="Content\Images\iceland.jpg" />
+    <Content Include="Content\Images\light-blue-bg.jpg" />
+    <Content Include="Content\Images\ProfileTabsBG.jpg" />
+    <Content Include="Content\Scripts\angular.js" />
+    <Content Include="Content\Scripts\angular.min.js" />
+    <Content Include="Content\Scripts\app.js" />
+    <Content Include="Content\Scripts\application.js" />
+    <Content Include="Content\Scripts\bootstrap.min.js" />
+    <Content Include="Content\Scripts\chart.js" />
+    <Content Include="Content\Scripts\Filters\AccessInfoCNFilter.js" />
+    <Content Include="Content\Scripts\Filters\DiffDateFilter.js" />
+    <Content Include="Content\Scripts\jquery.min.js" />
+    <Content Include="Content\Scripts\koala.js" />
+    <Content Include="Content\Scripts\Directives\ng-infinte-scroll.min.js" />
+    <Content Include="Content\Scripts\Services\AccountService.js" />
+    <Content Include="Content\Scripts\Services\AjaxService.js" />
+    <Content Include="Content\Scripts\Services\BlogService.js" />
+    <Content Include="Content\Scripts\Services\CommentService.js" />
+    <Content Include="Content\Scripts\Services\ContentService.js" />
+    <Content Include="Content\Scripts\Services\PersonService.js" />
+    <Content Include="Content\Scripts\toolkit.js" />
+    <Content Include="Content\Stylesheets\application.css" />
+    <Content Include="Content\Stylesheets\bootstrap.min.css" />
+    <Content Include="Content\Stylesheets\compoents\comment.css" />
+    <Content Include="Content\Stylesheets\compoents\message.css" />
+    <Content Include="Content\Stylesheets\css.css" />
+    <Content Include="Content\Stylesheets\docs.css" />
+    <Content Include="Content\Stylesheets\frame.css" />
+    <Content Include="Content\Stylesheets\compoents\icon.css" />
+    <Content Include="Content\Stylesheets\compoents\loader.css" />
+    <Content Include="Content\Stylesheets\skin.css" />
+    <Content Include="Content\Stylesheets\style.scss.css" />
+    <Content Include="Content\Stylesheets\toolkit.css" />
+    <Content Include="fonts\icons.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
+    <Compile Include="Filters\KoalaBlogAuthenticationAttribute.cs" />
+    <Compile Include="Filters\KoalaBlogAuthorizeAttribute.cs" />
+    <Compile Include="Filters\KoalaBlogExceptionHandlerAttribute.cs" />
+    <Compile Include="Filters\KoalaBlogJsonNetActionFilter.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BlogViewModels.cs" />
+    <Compile Include="Models\CommentViewModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\KoalaService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\LockedOut.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Shared\_AccountLayout.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Shared\_MenuPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Person\_ProfileTabs.cshtml" />
+    <Content Include="fonts\toolkit-entypo.woff2" />
+    <Content Include="fonts\icons.eot" />
+    <Content Include="fonts\icons.ttf" />
+    <Content Include="fonts\icons.woff" />
+    <Content Include="fonts\icons.woff2" />
+    <None Include="Properties\PublishProfiles\KoalaBlog.pubxml" />
+    <Content Include="Views\Person\ProfileShared.cshtml" />
+    <Content Include="Views\Person\ProfilePhotos.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KoalaBlog.ApiClient\KoalaBlog.ApiClient.csproj">
+      <Project>{eef7518e-2e30-43c9-9935-427ee524f114}</Project>
+      <Name>KoalaBlog.ApiClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KoalaBlog.Entity\KoalaBlog.Entity.csproj">
+      <Project>{397a253a-2f93-4f59-b4e0-9f72f1427c8d}</Project>
+      <Name>KoalaBlog.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KoalaBlog.Framework\KoalaBlog.Framework.csproj">
+      <Project>{334483f8-cf0d-4f9e-96e0-20f2ea2af5c9}</Project>
+      <Name>KoalaBlog.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KoalaBlog.Principal\KoalaBlog.Principal.csproj">
+      <Project>{52684c26-c018-4e8a-8f9d-1a5fc0a80a43}</Project>
+      <Name>KoalaBlog.Principal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KoalaBlog.Security\KoalaBlog.Security.csproj">
+      <Project>{3a1cd6bb-df1d-4a80-a645-b2557084f18e}</Project>
+      <Name>KoalaBlog.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KoalaBlog.WebModels\KoalaBlog.WebModels.csproj">
+      <Project>{55b3d963-55ff-4e2e-9b0e-bca30bc904a5}</Project>
+      <Name>KoalaBlog.WebModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20828</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8808</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
