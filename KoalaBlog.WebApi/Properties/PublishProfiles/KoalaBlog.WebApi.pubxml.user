@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\ProjectPublish\KoalaBlog.WebApi</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/da/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/de/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/07/2015 20:39:32</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/07/2015 20:39:23</publishTime>
+    </File>
+    <File Include="bin/es/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/fi/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.WebApi.dll">
+      <publishTime>10/23/2015 14:30:48</publishTime>
+    </File>
+    <File Include="bin/fr/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/it/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/ko/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/KoalaBlog.BLL.dll">
+      <publishTime>01/24/2016 19:25:43</publishTime>
+    </File>
+    <File Include="bin/KoalaBlog.DAL.dll">
+      <publishTime>01/24/2016 19:25:43</publishTime>
+    </File>
+    <File Include="bin/KoalaBlog.DTOs.dll">
+      <publishTime>01/24/2016 19:25:42</publishTime>
+    </File>
+    <File Include="bin/KoalaBlog.Entity.dll">
+      <publishTime>01/24/2016 19:19:47</publishTime>
+    </File>
+    <File Include="bin/KoalaBlog.Framework.dll">
+      <publishTime>01/24/2016 19:19:47</publishTime>
+    </File>
+    <File Include="bin/KoalaBlog.Principal.dll">
+      <publishTime>01/24/2016 19:19:47</publishTime>
+    </File>
+    <File Include="bin/KoalaBlog.Security.dll">
+      <publishTime>01/24/2016 19:19:46</publishTime>
+    </File>
+    <File Include="bin/KoalaBlog.WebApi.Core.dll">
+      <publishTime>01/24/2016 19:25:43</publishTime>
+    </File>
+    <File Include="bin/KoalaBlog.WebApi.dll">
+      <publishTime>01/24/2016 19:25:44</publishTime>
+    </File>
+    <File Include="bin/mk/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/07/2015 20:36:14</publishTime>
+    </File>
+    <File Include="bin/nl/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/pl/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/pt/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/ru/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/sv/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>10/12/2015 23:41:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>10/12/2015 23:42:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>10/12/2015 23:42:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/07/2015 20:35:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>10/07/2015 20:39:23</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/07/2015 20:37:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/07/2015 20:37:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>10/07/2015 20:37:41</publishTime>
+    </File>
+    <File Include="bin/tr/FluentValidation.resources.dll">
+      <publishTime>10/23/2015 14:30:47</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/07/2015 20:40:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/23/2015 14:32:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/24/2016 19:25:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
