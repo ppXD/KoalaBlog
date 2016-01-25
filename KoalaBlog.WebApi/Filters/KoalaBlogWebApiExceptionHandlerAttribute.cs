@@ -52,7 +52,7 @@ namespace KoalaBlog.WebApi.Filters
                     exMsg += "InnerException" + "\r\n" + ex.Message + ex.StackTrace + "\r\n";
                 }
 
-                await SMTPMailClient.SendAsync(msgSubject, exMsg, "459406671@qq.com", "", false);
+                await SMTPMailClient.SendAsync(msgSubject, exMsg, "yourmail@xx.com", "", false);
 
                 HttpResponseMessage response = actionExecutedContext.Request.CreateResponse<string>(HttpStatusCode.InternalServerError, "System Error");
                 actionExecutedContext.Response = response;
@@ -87,7 +87,7 @@ namespace KoalaBlog.WebApi.Filters
                 //如果Log数据库失败，则改为发邮件。
                 if(!isSucceedLog)
                 {
-                    await SMTPMailClient.SendAsync(emailSubject, exMsg, "459406671@qq.com", "", false);
+                    await SMTPMailClient.SendAsync(emailSubject, exMsg, "yourmail@xx.com", "", false);
                 }                
 
                 HttpResponseMessage response = actionExecutedContext.Request.CreateResponse<string>(HttpStatusCode.InternalServerError, "System Error");
